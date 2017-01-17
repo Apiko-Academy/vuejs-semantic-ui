@@ -3,7 +3,7 @@
 import Vue from 'vue';
 import App from './App';
 import '../semantic/dist/semantic.min.css';
-import 'semantic';
+import 'semantic'; // importing semantic js
 
 /* eslint-disable no-new */
 new Vue({

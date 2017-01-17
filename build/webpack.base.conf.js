@@ -90,9 +90,6 @@ module.exports = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
-      semantic: 'semantic-ui',
-      Semantic: 'semantic-ui',
-      'semantic-ui': 'semantic-ui'
     })
   ]
 }
