@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "jquery": "^3.1.1",
+    "semantic-ui": "^2.2.7",
     "vue": "^2.1.0"
   },
   "devDependencies": {

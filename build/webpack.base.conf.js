@@ -2,6 +2,7 @@ var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
 var projectRoot = path.resolve(__dirname, '../')
+var webpack = require('webpack');
 
 var env = process.env.NODE_ENV
 // check env & config/index.js to decide whether to enable CSS source maps for the
@@ -26,7 +27,8 @@ module.exports = {
       'vue$': 'vue/dist/vue.common.js',
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
-      'components': path.resolve(__dirname, '../src/components')
+      'components': path.resolve(__dirname, '../src/components'),
+      'semantic': path.resolve(__dirname, '../semantic/dist/semantic.js')
     }
   },
   resolveLoader: {
@@ -66,7 +68,7 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       }
-    ]
+    ],
   },
   vue: {
     loaders: utils.cssLoaders({ sourceMap: useCssSourceMap }),
@@ -74,6 +76,17 @@ module.exports = {
       require('autoprefixer')({
         browsers: ['last 2 versions']
       })
-    ]
-  }
+    ],
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      // jquery
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      semantic: 'semantic-ui',
+      Semantic: 'semantic-ui',
+      'semantic-ui': 'semantic-ui'
+    })
+  ]
 }
