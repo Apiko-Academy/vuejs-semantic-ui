@@ -38,7 +38,7 @@ Call ```npm run build-semaintic-ui``` after you've made you configuration
 
 ## Using Sass
 
-You can wright Sass style directly at you Vue components like this:
+You can write Sass style directly at you Vue components like this:
 ```
 <style lang="sass">
   h2 {
