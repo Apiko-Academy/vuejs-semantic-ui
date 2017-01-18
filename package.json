@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
+    "build-semantic-ui": "gulp build --gulpfile semantic/gulpfile.js",
     "build": "node build/build.js"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "css-loader": "^0.25.0",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
+    "gulp": "^3.9.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "friendly-errors-webpack-plugin": "^1.1.2",
