@@ -33,7 +33,7 @@ $('.ui.accordion')
 
 ### configuring Semantic-UI
 
-You can configure semantic themes using guides at http://semantic-ui.com/introduction/build-tools.html
+You can configure semantic themes using guides at http://semantic-ui.com/introduction/build-tools.html  
 Call ```npm run build-semaintic-ui``` after you've made you configuration
 
 ## Using Sass
