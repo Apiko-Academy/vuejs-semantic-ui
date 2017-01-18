@@ -9,5 +9,9 @@ import 'semantic'; // importing semantic js
 new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App }
+  components: { App },
+  mounted: function() {
+    $('.ui.accordion')
+    	.accordion();
+  }
 })
