@@ -9,7 +9,7 @@
 npm install
 
 # build semantic-ui
-npm run build-semaintic-ui
+npm run build-semantic-ui
 
 # serve with hot reload at localhost:8080
 npm run dev
